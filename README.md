@@ -8,13 +8,6 @@ The challenge lies in the fact that the positions of the coins are not visible i
 ## GameManager
 The `GameManager` script is responsible for managing the gameplay elements of a Unity game. It controls spawning coins, managing player interaction, and handling game over conditions.
 
-### Features
-- **StartGame():** Initiates the game by enabling player controllers and starting a countdown timer.
-- **Countdown():** A coroutine that counts down the time until the game ends.
-- **CoinPickedUp():** Called when a coin is collected, updates the coin counter, spawns a new coin, and checks for win conditions.
-- **SpawnCoin():** Spawns a coin at a random position within predefined bounds.
-- **GameOver():** Ends the game, disables player controls, displays game over text, and freezes time.
-
 ### Usage
 1. Call `StartGame()` to begin the game.
 2. Collect coins by interacting with them in the scene.
@@ -41,17 +34,17 @@ The `GameManager` script is responsible for managing the gameplay elements of a 
 ```csharp
     public void CoinPickedUp() {...}
 ```
--Called when a coin is collected, updates the coin counter, spawns a new coin, and checks for win conditions
+- Called when a coin is collected, updates the coin counter, spawns a new coin, and checks for win conditions
 #
 ```csharp
     void SpawnCoin() {...}
 ```
--Spawns a coin at a random position within predefined bounds
+- Spawns a coin at a random position within predefined bounds
 #
 ```csharp
     public void GameOver(bool isWin) {...}
 ```
--Ends the game, disables player controls, displays game over text, and freezes time   
+- Ends the game, disables player controls, displays game over text, and freezes time   
 #
 
 ## VehicleSelection
@@ -63,7 +56,6 @@ It manages the selection of the vehicle type and initializes the game accordingl
 ```csharp
 public void SelectVehicle(int vehicleType) {...}
 ```
-- Allows the player to select the vehicle type
 
 ## PedestrianController
 
